@@ -6,14 +6,7 @@
 
       <ul class="navbar-nav me-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            Gestión Libro
-          </a>
-          <ul class="dropdown-menu dropdown-menu-dark"style="background-color: gray" aria-labelledby="botondesplegable">
-            <li><a class="dropdown-item" href="#">Crear</a> </li>
-            <li><a class="dropdown-item" href="#">Modificar</a> </li>
-            <li><a class="dropdown-item" href="#">Eliminar</a> </li>
-          </ul>
+
 
         </li>
       </ul>
@@ -26,15 +19,27 @@
 
     <div class="profile-logo dropstart">
       <button class="btn btn-outline-light dropdown-toggle " type="button" id="botondesplegable" data-bs-toggle="dropdown" aria-expanded="false" style="width:100px" >
-        User
+        Usuario
+      </button>
+
+      <ul class="dropdown-menu dropdown-menu-dark"style="background-color: gray" aria-labelledby="botondesplegable">
+        <li><a class="dropdown-item" href="#">Listar</a> </li>
+        <li><a class="dropdown-item" href="#">Crear</a> </li>
+        <li><a class="dropdown-item" href="#">Modificar</a> </li>
+        <li><a class="dropdown-item" href="#">Eliminar</a> </li>
+      </ul>
+
+      <button class="btn btn-outline-light dropdown-toggle " type="button" id="botondesplegable" data-bs-toggle="dropdown" aria-expanded="false" style="width:100px" >
+        Libro
       </button>
       <a routerLink="/login" class="btn btn-primary" role="button" style="background-color: #00BFFF">
-        Login
+        Iniciar Sesión
       </a>
+
       <ul class="dropdown-menu dropdown-menu-dark"style="background-color: gray" aria-labelledby="botondesplegable">
-        <li><a class="dropdown-item" href="#">Sign Up</a> </li>
-        <li><a class="dropdown-item" href="#">Your profile</a> </li>
-        <li><a class="dropdown-item" href="#">Log Out</a> </li>
+        <li><a class="dropdown-item" href="#">Crear</a> </li>
+        <li><a class="dropdown-item" href="#">Modificar</a> </li>
+        <li><a class="dropdown-item" href="#">Eliminar</a> </li>
       </ul>
 
     </div>
