@@ -1,5 +1,6 @@
 
 <div class="container mt-4 vj-destacados">
+    <button type="button" class="btn btn-primary" routerLink="/crearLibro" style="background-color: #00BFFF">Crear libro</button>
   <div class="row">
     <div *ngFor="let book of books" class="col-md-3 mb-4">
       <div class="card h-100">
@@ -7,13 +8,15 @@
         <div class="card-body">
           <h5 class="card-title">{{book.name}}</h5>
           <p>
-            <a (click)="searchBooksByEditorial(book)" class="badge text-bg-info" [text]=""></a>
+            <a (click)="searchBooksByEditorial(book)" class="badge text-bg-info" [text]="book.editorialId.name"></a>
           </p>
           <p class="card-text">{{book.description}}</p>
         </div>
-
-        <div class="card-footer text.muted">
-          <a href="#" class="btn btn-primary">Detalle</a>
+        <div>
+          <div class="card-footer text-muted d-flex">
+            <a [routerLink]="['/modificarLibro/', book.id]" class="btn btn-primary me-2">Modificar Libro</a>
+            <a (click)="deleteBookById(book.id)" class="btn btn-primary">Eliminar Libro</a>
+          </div>
         </div>
       </div>
     </div>

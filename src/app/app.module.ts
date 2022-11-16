@@ -12,6 +12,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { EditorialComponent } from './editorial/editorial.component';
+import { CrearLibroComponent } from './crear-libro/crear-libro.component';
+import { ModificarLibroComponent } from './modificar-libro/modificar-libro.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { EditorialComponent } from './editorial/editorial.component';
     NavBarComponent,
     LoginComponent,
     RegisterComponent,
-    EditorialComponent
+    EditorialComponent,
+    CrearLibroComponent,
+    ModificarLibroComponent
   ],
   imports: [
     BrowserModule,
